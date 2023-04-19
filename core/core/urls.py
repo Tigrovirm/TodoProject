@@ -16,11 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from todo.views import main_page
+from todo.views import index
 from todo.views import about_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('1xbet/', main_page),
+    path('index/', index),
     path('burn/', about_page),
 ]
